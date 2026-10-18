@@ -50,11 +50,23 @@ export function Contact() {
         Get in touch
       </h2>
       <p className="mt-2 max-w-xl text-muted-foreground">
-        Have a project in mind or want to say hello? Send a message, or email
-        me directly at{" "}
-        <a href={`mailto:${siteConfig.email}`} className="underline">
-          {siteConfig.email}
-        </a>
+        Have a project in mind or want to say hello? Send a message below
+        {siteConfig.email ? (
+          <>
+            , or email me directly at{" "}
+            <a href={`mailto:${siteConfig.email}`} className="underline">
+              {siteConfig.email}
+            </a>
+          </>
+        ) : (
+          <>
+            {" "}
+            or connect on{" "}
+            <a href={siteConfig.social.linkedin} className="underline">
+              LinkedIn
+            </a>
+          </>
+        )}
         .
       </p>
 

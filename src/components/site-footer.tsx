@@ -21,12 +21,14 @@ export function SiteFooter() {
           >
             LinkedIn
           </a>
-          <a
-            href={`mailto:${siteConfig.email}`}
-            className="transition-colors hover:text-foreground"
-          >
-            Email
-          </a>
+          {siteConfig.email && (
+            <a
+              href={`mailto:${siteConfig.email}`}
+              className="transition-colors hover:text-foreground"
+            >
+              Email
+            </a>
+          )}
         </div>
       </div>
     </footer>

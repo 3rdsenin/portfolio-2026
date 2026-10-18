@@ -18,6 +18,7 @@ const NAV_LINKS = [
   { href: "#about", label: "About" },
   { href: "#experience", label: "Experience" },
   { href: "#skills", label: "Skills" },
+  { href: "#certifications", label: "Certifications" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -42,7 +43,7 @@ export function SiteHeader() {
             </Link>
           ))}
           <a
-            href={`mailto:${siteConfig.email}`}
+            href={siteConfig.email ? `mailto:${siteConfig.email}` : "#contact"}
             className={buttonVariants({ size: "sm" })}
           >
             Get in touch
