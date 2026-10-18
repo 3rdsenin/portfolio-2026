@@ -1,12 +1,12 @@
 export const siteConfig = {
-  name: "Paul Mensah Solomon",
+  name: "Paul Solomon",
   title: "Product Manager & Cloud Engineer",
   tagline:
     "I build cloud infrastructure, products, and the teams that run them — with a background spanning software engineering, technical training, and operations.",
   // No public contact email confirmed yet — set one up before publishing
   // contact details, don't fabricate or guess one.
   email: null as string | null,
-  location: "Dansoman, Accra, Ghana",
+  location: "Accra, Ghana",
   social: {
     github: "https://github.com/3rdsenin",
     linkedin: "https://www.linkedin.com/in/paultsolomon/",
