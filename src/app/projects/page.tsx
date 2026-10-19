@@ -16,7 +16,16 @@ export default function ProjectsPage() {
       </h1>
       <p className="mt-3 max-w-2xl text-muted-foreground">
         Case studies from real work — the problem, the approach, and the
-        outcome.
+        outcome. This site&rsquo;s own source is on{" "}
+        <a
+          href="https://github.com/3rdsenin/portfolio-2026"
+          target="_blank"
+          rel="noreferrer"
+          className="text-foreground underline underline-offset-4"
+        >
+          GitHub
+        </a>
+        .
       </p>
       <div className="mt-8 flex flex-col gap-4">
         {caseStudies.map((project) => (
